@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Button} from "react-bootstrap" 
+import {Button, Col, Container, Row} from "react-bootstrap" 
 
 function Form() {
   const [nombre, setNombre] = useState("");
@@ -13,9 +13,10 @@ function Form() {
 
   return (
     <>
-      <main>
-        <div className="text-center container-fluid row">
-            <div className="col-6">
+    <Container fluid>
+      <Row>
+        <Col md="6" xl="12" sm="12">
+        <main>
                 <form className="text-center" onSubmit={handleChange}>
                 <div className="form-group">
                     <label for="exampleInputEmail1" className="fw-bolder my-3">Ingrese su Nombre</label>
@@ -67,9 +68,11 @@ function Form() {
                     Enviar
                 </Button>
                 </form>
-            </div>
-        </div>
+         
       </main>
+        </Col>  
+      </Row>
+    </Container>
     </>
   );
 }
