@@ -1,6 +1,6 @@
 import Eventos from "./componentes/Componentes";
 import Parrafo from "./componentes/Parrafo";
-import Form from "./componentes/Form"
+import Listas from "./componentes/Listas";
 
 
 
@@ -9,7 +9,7 @@ function App() {
    <div>
     <Parrafo/>
     <Eventos/>
-    <Form/>
+    <Listas/>
    </div>
   )
 }

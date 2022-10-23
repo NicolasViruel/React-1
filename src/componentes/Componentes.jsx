@@ -19,7 +19,12 @@ const Eventos = ()=>{
     }
 
     return(
-        <><p>{nombre}</p>
+        
+        <>
+        <div>
+            <h2 >Problema 3</h2>
+        </div>
+        <p>{nombre}</p>
         <button onClick={cambiarNombre}>Cambiar Parrafo</button>
         </>
     )
